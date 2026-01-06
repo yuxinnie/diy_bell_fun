@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Holiday Bell Ringer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Mountains+of+Christmas:wght@700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+      body {
+        margin: 0;
+        overflow: hidden;
+        font-family: 'Inter', sans-serif;
+      }
+      .font-festive {
+        font-family: 'Mountains of Christmas', cursive;
+      }
+      @keyframes shake {
+        0% { transform: rotate(0deg); }
+        25% { transform: rotate(2deg); }
+        75% { transform: rotate(-2deg); }
+        100% { transform: rotate(0deg); }
+      }
+      .animate-shake-subtle {
+        animation: shake 3s ease-in-out infinite;
+      }
+      
+      /* Large White Cartoon Hand Back Cursor - Open */
+      .custom-hand-cursor {
+        cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='64' height='64' viewBox='0 0 64 64'><path d='M14 44c0 8.8 7.2 16 16 16h8c8.8 0 16-7.2 16-16v-12c0-2.2-1.8-4-4-4s-4 1.8-4 4v-4c0-2.2-1.8-4-4-4s-4 1.8-4 4v-2c0-2.2-1.8-4-4-4s-4 1.8-4 4v4c0-2.2-1.8-4-4-4s-4 1.8-4 4v16z' fill='white' stroke='black' stroke-width='3' stroke-linejoin='round'/><path d='M26 36v4M34 34v4M42 36v4' stroke='black' stroke-width='2' stroke-linecap='round' opacity='0.3'/></svg>") 32 32, auto;
+      }
+      
+      /* Large White Cartoon Hand Back Cursor - Grabbing */
+      .custom-hand-cursor-grabbing {
+        cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='64' height='64' viewBox='0 0 64 64'><path d='M16 48c0 6.6 5.4 12 12 12h8c6.6 0 12-5.4 12-12v-6c0-4.4-3.6-8-8-8h-16c-4.4 0-8 3.6-8 8v6z' fill='white' stroke='black' stroke-width='3' stroke-linejoin='round'/><path d='M24 38v6M32 38v6M40 38v6' stroke='black' stroke-width='2' stroke-linecap='round' opacity='0.3'/></svg>") 32 32, auto;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://esm.sh/react-dom@^19.2.1/",
+    "@google/genai": "https://esm.sh/@google/genai@^1.33.0",
+    "react/": "https://esm.sh/react@^19.2.1/",
+    "react": "https://esm.sh/react@^19.2.1"
+  }
+}
+</script>
+</head>
+  <body class="custom-hand-cursor">
+    <div id="root"></div>
+  </body>
+</html>
